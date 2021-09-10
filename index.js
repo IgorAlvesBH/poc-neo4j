@@ -6,7 +6,6 @@ process.title = pkg.name;
 const shutdown = async () => {
   console.log('Gracefully shutdown in progress');
   await server.stop();
-  await database.close();
   process.exit(0);
 };
 
